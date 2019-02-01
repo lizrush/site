@@ -4,7 +4,6 @@ module.exports = {
     description: `this is Liz Rush's personal website`,
     author: `@lizmrush`,
   },
-  pathPrefix: '/site',
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
@@ -27,8 +26,5 @@ module.exports = {
         display: `minimal-ui`,
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.app/offline
-    // 'gatsby-plugin-offline',
   ],
 }

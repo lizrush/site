@@ -13,7 +13,7 @@ const IndexPage = () => (
     </p>
     <p>
       Please note that if you have landed on this site in search of Ada related
-      content, I am in the process of deciding if I will permananely retire that
+      content, I am in the process of deciding if I will permanently retire that
       part of my old site and it might not re-appear here.
     </p>
     <p>In the meantime, look at this picture of my cats:</p>

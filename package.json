@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "lizmrush-personal-site",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "description": "a personal site for liz rush",
+  "version": "0.0.1",
+  "author": "liz+personalsite@lizmrush.com",
   "dependencies": {
     "gatsby": "^2.0.76",
     "gatsby-image": "^2.0.20",
@@ -36,9 +36,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/lizrush/site"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/lizrush/site/issues"
   }
 }
