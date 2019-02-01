@@ -1,20 +1,24 @@
 import React from 'react'
-import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
-import Image from '../components/image'
 import SEO from '../components/seo'
+import Image from '../components/image'
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <SEO title="Home" keywords={[`lizmrush`, `liz rush`]} />
+    <p>
+      Hello. You've hit a placeholder site while I migrate my old site from
+      Ghost on DigitalOcean to Gatsby on Github Pages.
+    </p>
+    <p>
+      Please note that if you have landed on this site in search of Ada related
+      content, I am in the process of deciding if I will permananely retire that
+      part of my old site and it might not re-appear here.
+    </p>
+    <p>In the meantime, look at this picture of my cats:</p>
+
+    <Image />
   </Layout>
 )
 
