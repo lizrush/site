@@ -27,7 +27,8 @@
     "develop": "gatsby develop",
     "start": "npm run develop",
     "format": "prettier --write \"src/**/*.js\"",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+    "copy-static-files": "cp CNAME public/",
+    "deploy": "gatsby build --prefix-paths && npm run copy-static-files && gh-pages -d public"
   },
   "devDependencies": {
     "gh-pages": "^2.0.1",
