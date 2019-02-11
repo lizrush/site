@@ -2,23 +2,32 @@ import React from 'react'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import Image from '../components/image'
+
+import styles from './index.module.scss'
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`lizmrush`, `liz rush`]} />
-    <p>
-      Hello. You've hit a placeholder site while I migrate my old site from
-      Ghost on DigitalOcean to Gatsby on Github Pages.
-    </p>
-    <p>
-      Please note that if you have landed on this site in search of Ada related
-      content, I am in the process of deciding if I will permanently retire that
-      part of my old site and it might not re-appear here.
-    </p>
-    <p>In the meantime, look at this picture of my cats:</p>
 
-    <Image />
+    <h1>Hi, I'm Liz Rush.</h1>
+    <p>
+      I live in Seattle and I'm currently working as the{' '}
+      <span class={styles.pinkHighlight}>
+        Anti-Trafficking Technology Director at Seattle Against Slavery
+      </span>
+      .
+    </p>
+
+    <p>
+      Previously, I ran a{' '}
+      <span class={styles.yellowHighlight}>
+        web consulting agency called Archaic Future
+      </span>
+      . I've also worked as an iOS developer and full-stack web developer at
+      various startups.
+    </p>
+
+    <p />
   </Layout>
 )
 
