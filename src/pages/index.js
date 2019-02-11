@@ -12,22 +12,42 @@ const IndexPage = () => (
     <h1>Hi, I'm Liz Rush.</h1>
     <p>
       I live in Seattle and I'm currently working as the{' '}
-      <span class={styles.pinkHighlight}>
+      <a
+        class={styles.pinkHighlight}
+        href="https://www.seattleagainstslavery.org"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         Anti-Trafficking Technology Director at Seattle Against Slavery
-      </span>
+      </a>
       .
     </p>
 
     <p>
       Previously, I ran a{' '}
-      <span class={styles.yellowHighlight}>
+      <a
+        class={styles.yellowHighlight}
+        href="https://archaicfuture.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         web consulting agency called Archaic Future
-      </span>
+      </a>
       . I've also worked as an iOS developer and full-stack web developer at
       various startups.
     </p>
 
-    <p />
+    <p>
+      You can contact me at{' '}
+      <a
+        class={styles.pinkHighlight}
+        href="mailto:liz@lizmrush.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        liz@lizmrush.com
+      </a>
+    </p>
   </Layout>
 )
 
