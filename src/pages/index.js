@@ -2,7 +2,7 @@ import React from 'react'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-
+import Sparkles from '../components/sparkles'
 import styles from './index.module.scss'
 
 const IndexPage = () => (
@@ -13,7 +13,7 @@ const IndexPage = () => (
     <p>
       I live in Seattle and I'm currently working as the{' '}
       <a
-        class={styles.pinkHighlight}
+        className={styles.pinkHighlight}
         href="https://www.seattleagainstslavery.org"
         target="_blank"
         rel="noopener noreferrer"
@@ -26,7 +26,7 @@ const IndexPage = () => (
     <p>
       Previously, I ran a{' '}
       <a
-        class={styles.yellowHighlight}
+        className={styles.yellowHighlight}
         href="https://archaicfuture.com"
         target="_blank"
         rel="noopener noreferrer"
@@ -40,7 +40,7 @@ const IndexPage = () => (
     <p>
       You can contact me at{' '}
       <a
-        class={styles.pinkHighlight}
+        className={styles.pinkHighlight}
         href="mailto:liz@lizmrush.com"
         target="_blank"
         rel="noopener noreferrer"
@@ -48,6 +48,8 @@ const IndexPage = () => (
         liz@lizmrush.com
       </a>
     </p>
+
+    <Sparkles />
   </Layout>
 )
 
