@@ -2,12 +2,15 @@ import React from 'react'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import Sparkles from '../components/sparkles'
+import SparkleToggle from '../components/sparkleToggle'
+
 import styles from './index.module.scss'
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`lizmrush`, `liz rush`]} />
+
+    <SparkleToggle />
 
     <h1>Hi, I'm Liz Rush.</h1>
     <p>
@@ -48,8 +51,6 @@ const IndexPage = () => (
         liz@lizmrush.com
       </a>
     </p>
-
-    <Sparkles />
   </Layout>
 )
 

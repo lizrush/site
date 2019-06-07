@@ -60,7 +60,7 @@ export default class Sparkles extends React.Component {
   }
 
   componentWillUnmount() {
-    document.removeEventListener(this.onMouseMove)
+    document.removeEventListener('mousemove', this.onMouseMove)
     clearInterval(this.id)
   }
 
