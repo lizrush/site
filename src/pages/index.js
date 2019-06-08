@@ -4,6 +4,7 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 import SparkleToggle from '../components/sparkleToggle'
 import Headshot from '../components/headshot'
+import Link from '../components/link'
 
 import styles from './index.module.scss'
 
@@ -12,7 +13,6 @@ const IndexPage = () => (
     <SEO title="Home" keywords={[`lizmrush`, `liz rush`]} />
 
     <div className={styles.gridContainer}>
-      <div />
       <div className={styles.sparkles}>
         <SparkleToggle />
       </div>
@@ -25,41 +25,26 @@ const IndexPage = () => (
         <h1>Hi, I'm Liz Rush.</h1>
         <p>
           I live in Seattle and I'm currently working as the{' '}
-          <a
-            className={styles.pinkHighlight}
-            href="https://www.seattleagainstslavery.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <Link color="pink" href="https://www.seattleagainstslavery.org">
             Anti-Trafficking Technology Director at Seattle Against Slavery
-          </a>
+          </Link>
           .
         </p>
 
         <p>
           Previously, I ran a{' '}
-          <a
-            className={styles.yellowHighlight}
-            href="https://archaicfuture.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <Link color="yellow" href="https://archaicfuture.com">
             web consulting agency called Archaic Future
-          </a>
+          </Link>
           . I've also worked as an iOS developer and full-stack web developer at
           various startups.
         </p>
 
         <p>
           You can contact me at{' '}
-          <a
-            className={styles.pinkHighlight}
-            href="mailto:liz@lizmrush.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <Link color="pink" href="mailto:liz@lizmrush.com">
             liz@lizmrush.com
-          </a>
+          </Link>
         </p>
       </div>
     </div>
