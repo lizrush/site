@@ -1,9 +1,11 @@
 import React from 'react'
+
 import { ExternalLink } from '../components/ExternalLink'
 import { Headshot } from '../components/Headshot'
 import { Layout } from '../components/Layout'
 import { SEO } from '../components/SEO'
 import { SparkleToggle } from '../components/SparkleToggle'
+
 import styles from './index.module.scss'
 
 export default function IndexPage() {
