@@ -2,6 +2,8 @@ import React from 'react'
 
 import Sparkles from './sparkles'
 
+import styles from './sparkleToggle.module.scss'
+
 export default class SparkleToggle extends React.Component {
   state = { sparklesOn: true }
 
@@ -10,7 +12,7 @@ export default class SparkleToggle extends React.Component {
 
     return (
       <>
-        <button className="sparkleToggle" onClick={this.handleToggleClick}>
+        <button className={styles.sparkleToggle} onClick={this.toggleSparkles}>
           ✨
         </button>
 
@@ -19,7 +21,7 @@ export default class SparkleToggle extends React.Component {
     )
   }
 
-  handleToggleClick = () => {
+  toggleSparkles = () => {
     this.setState({ sparklesOn: !this.state.sparklesOn })
   }
 }
