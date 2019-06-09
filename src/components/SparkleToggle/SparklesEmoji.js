@@ -7,16 +7,16 @@ export function SparklesEmoji() {
     <StaticQuery
       query={graphql`
         query {
-          headshot: file(relativePath: { eq: "sparkles.png" }) {
+          sparklesEmoji: file(relativePath: { eq: "sparkles.png" }) {
             childImageSharp {
-              fluid(maxWidth: 200) {
-                ...GatsbyImageSharpFluid
+              fixed(height: 100, width: 100) {
+                ...GatsbyImageSharpFixed
               }
             }
           }
         }
       `}
-      render={data => <Img fluid={data.headshot.childImageSharp.fluid} />}
+      render={data => <Img fixed={data.sparklesEmoji.childImageSharp.fixed} />}
     />
   )
 }
