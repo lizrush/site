@@ -1,6 +1,6 @@
 @import '../shared/shared';
 
-.highlight {
+%highlight {
   transition: background-size 0.4s ease;
   padding-bottom: inherit;
 
@@ -10,7 +10,7 @@
 }
 
 .pink {
-  @extend .highlight;
+  @extend %highlight;
   background: linear-gradient(
       to bottom,
       transparent 49%,
@@ -20,7 +20,7 @@
 }
 
 .yellow {
-  @extend .highlight;
+  @extend %highlight;
   background: linear-gradient(
       to bottom,
       transparent 49%,

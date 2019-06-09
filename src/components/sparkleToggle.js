@@ -12,10 +12,7 @@ export default class SparkleToggle extends React.Component {
 
     return (
       <>
-        <button
-          className={styles.sparkleToggle}
-          onClick={this.handleToggleClick}
-        >
+        <button className={styles.sparkleToggle} onClick={this.toggleSparkles}>
           ✨
         </button>
 
@@ -24,7 +21,7 @@ export default class SparkleToggle extends React.Component {
     )
   }
 
-  handleToggleClick = () => {
+  toggleSparkles = () => {
     this.setState({ sparklesOn: !this.state.sparklesOn })
   }
 }
