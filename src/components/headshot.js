@@ -2,7 +2,7 @@ import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
-const Headshot = () => (
+export const Headshot = () => (
   <StaticQuery
     query={graphql`
       query {
@@ -18,4 +18,3 @@ const Headshot = () => (
     render={data => <Img fluid={data.headshot.childImageSharp.fluid} />}
   />
 )
-export default Headshot

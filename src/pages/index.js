@@ -3,7 +3,7 @@ import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import SparkleToggle from '../components/sparkleToggle'
-import Headshot from '../components/headshot'
+import { Headshot } from '../components/headshot'
 import { ExternalLink } from '../components/externalLink'
 
 import styles from './index.module.scss'
