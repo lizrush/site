@@ -9,7 +9,7 @@ export function SparklesEmoji() {
         query {
           sparklesEmoji: file(relativePath: { eq: "sparkles.png" }) {
             childImageSharp {
-              fixed(height: 100, width: 100) {
+              fixed(height: 80, width: 80) {
                 ...GatsbyImageSharpFixed
               }
             }
