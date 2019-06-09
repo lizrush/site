@@ -1,14 +1,15 @@
 import React from 'react'
+import styles from './styles.module.scss'
 
-import styles from './externalLink.module.scss'
-
-export const ExternalLink = ({ color, ...props }) => {
+export function ExternalLink({ color, children, ...props }) {
   return (
     <a
       className={styles[color]}
       rel="noopener noreferrer"
       target="_blank"
       {...props}
-    />
+    >
+      {children}
+    </a>
   )
 }
