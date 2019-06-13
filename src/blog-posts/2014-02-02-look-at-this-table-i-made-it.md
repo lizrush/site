@@ -1,6 +1,6 @@
 ---
 title: Look at this table, I made it
-path: '/blog/look-at-this-table-i-made-it'
+path: '/look-at-this-table-i-made-it'
 date_published: 2014-02-03T04:00:00.000Z
 ---
 

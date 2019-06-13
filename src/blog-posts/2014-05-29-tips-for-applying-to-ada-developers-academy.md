@@ -1,6 +1,6 @@
 ---
 title: Tips for applying to Ada Developers Academy
-path: '/blog/tips-for-applying-to-ada-developers-academy'
+path: '/tips-for-applying-to-ada-developers-academy'
 date_published: 2014-05-30T02:00:00.000Z
 ---
 

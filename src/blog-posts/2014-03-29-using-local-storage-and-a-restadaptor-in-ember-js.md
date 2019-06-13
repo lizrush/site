@@ -1,6 +1,6 @@
 ---
 title: Using Local Storage and REST Adaptor in Ember.js
-path: '/blog/using-local-storage-and-a-restadaptor-in-ember-js'
+path: '/using-local-storage-and-a-restadaptor-in-ember-js'
 date_published: 2014-03-29T07:25:00.000Z
 ---
 

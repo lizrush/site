@@ -1,6 +1,6 @@
 ---
 title: I'm Geek of the Week!
-path: '/blog/geek-of-the-week'
+path: '/geek-of-the-week'
 date_published: 2016-04-09T05:25:02.000Z
 ---
 

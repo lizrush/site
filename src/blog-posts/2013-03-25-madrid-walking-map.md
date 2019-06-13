@@ -1,6 +1,6 @@
 ---
 title: Madrid Walking Map
-path: '/blog/madrid-walking-map'
+path: '/madrid-walking-map'
 date_published: 2013-03-26T02:00:00.000Z
 ---
 

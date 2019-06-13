@@ -1,6 +1,6 @@
 ---
 title: Using the rails jquery modal gem
-path: '/blog/using-the-rails-jquery-modal-gem'
+path: '/using-the-rails-jquery-modal-gem'
 date_published: 2014-03-06T04:00:00.000Z
 ---
 

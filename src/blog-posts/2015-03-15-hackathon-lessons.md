@@ -1,6 +1,6 @@
 ---
 title: "How to Win a Hackathon: Lessons from Intel's IoT Roadshow"
-path: '/blog/hackathon-lessons'
+path: '/hackathon-lessons'
 date_published: 2015-03-16T05:31:40.000Z
 ---
 

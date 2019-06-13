@@ -1,6 +1,6 @@
 ---
 title: Applying to Ada Developers Academy? Here's your Ada blog master post!
-path: '/blog/applying-to-ada-developers-academy-heres-your-ada-blog-master-post'
+path: '/applying-to-ada-developers-academy-heres-your-ada-blog-master-post'
 date_published: 2016-08-19T13:26:44.000Z
 ---
 

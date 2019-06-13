@@ -1,8 +1,8 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 
 import { Layout } from '../Layout'
-import { SEO } from '../SEO'
+import { SEO } from '../../components/SEO'
 
 export default function Template({ data }) {
   const { markdownRemark } = data
@@ -10,20 +10,22 @@ export default function Template({ data }) {
   return (
     <Layout>
       <SEO
-        title="frontmatter.title"
-        keywords={['frontmatter.title', `liz rush`]}
+        title={frontmatter.title}
+        keywords={[frontmatter.title, `liz rush`, `blog`]}
       />
 
       <div className="blog-post-container">
         <div className="blog-post">
           <h1>{frontmatter.title}</h1>
-          <h2>{frontmatter.date}</h2>
+          <h2>{frontmatter.date_published}</h2>
           <div
             className="blog-post-content"
             dangerouslySetInnerHTML={{ __html: html }}
           />
         </div>
       </div>
+
+      <Link to="/blog">⟵ back</Link>
     </Layout>
   )
 }
@@ -33,7 +35,7 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {
-        date_published
+        date_published(formatString: "MMMM DD, YYYY")
         path
         title
       }

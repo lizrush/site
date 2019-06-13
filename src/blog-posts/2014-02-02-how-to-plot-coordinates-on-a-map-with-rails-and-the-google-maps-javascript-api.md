@@ -1,6 +1,6 @@
 ---
 title: 'Plotting coordinates: a simple gon gem tutorial'
-path: '/blog/how-to-plot-coordinates-on-a-map-with-rails-and-the-google-maps-javascript-api/'
+path: '/how-to-plot-coordinates-on-a-map-with-rails-and-the-google-maps-javascript-api/'
 date_published: 2014-02-03T04:00:00.000Z
 ---
 

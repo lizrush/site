@@ -1,6 +1,6 @@
 ---
 title: Stricter Tests for Expectations Set on Nil in RSpec
-path: '/blog/stricter-tests-for-expectations-set-on-nil-in-rspec'
+path: '/stricter-tests-for-expectations-set-on-nil-in-rspec'
 date_published: 2015-07-16T10:17:45.000Z
 ---
 

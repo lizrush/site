@@ -1,6 +1,6 @@
 ---
 title: 2016 Tech Conference Recap
-path: '/blog/2016-tech-conference-recap'
+path: '/2016-tech-conference-recap'
 date_published: 2017-02-21T13:08:44.000Z
 ---
 

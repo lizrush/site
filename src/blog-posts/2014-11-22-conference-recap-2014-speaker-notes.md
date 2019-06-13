@@ -1,6 +1,6 @@
 ---
 title: Conference Recaps, Speaker Notes, and Why I'm Opting Out in 2015
-path: '/blog/conference-recap-2014-speaker-notes'
+path: '/conference-recap-2014-speaker-notes'
 date_published: 2014-11-22T08:11:00.000Z
 ---
 

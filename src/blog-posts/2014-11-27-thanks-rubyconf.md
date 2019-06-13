@@ -1,6 +1,6 @@
 ---
 title: Thanks & "RubyConf or Bust!" Follow Up
-path: '/blog/thanks-rubyconf'
+path: '/thanks-rubyconf'
 date_published: 2014-11-28T07:16:47.000Z
 ---
 

@@ -1,8 +1,9 @@
 import React from 'react'
+import { Link } from 'gatsby'
 
 import { ExternalLink } from '../components/ExternalLink'
 import { Headshot } from '../components/Headshot'
-import { Layout } from '../components/Layout'
+import { Layout } from '../templates/Layout'
 import { SEO } from '../components/SEO'
 import { SparkleToggle } from '../components/SparkleToggle'
 
@@ -50,6 +51,8 @@ export default function IndexPage() {
               liz@lizmrush.com
             </ExternalLink>
           </p>
+
+          <Link to="/blog">blog posts</Link>
         </div>
       </div>
     </Layout>

@@ -1,6 +1,6 @@
 ---
 title: 'The Real Ada Developer’s Academy Experience'
-path: '/blog/the-real-ada-developers-academy-experience'
+path: '/the-real-ada-developers-academy-experience'
 date_published: 2014-08-28T08:40:03.000Z
 ---
 

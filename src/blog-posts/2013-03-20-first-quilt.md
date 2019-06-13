@@ -1,5 +1,5 @@
 ---
-path: '/blog/first-quilt'
+path: '/first-quilt'
 title: First quilt
 date_published: 2013-03-21T02:00:00.000Z
 ---

@@ -1,6 +1,6 @@
 ---
 title: Troubleshooting cron jobs for bot makers
-path: '/blog/cron-jobs-for-bot-makers'
+path: '/cron-jobs-for-bot-makers'
 date_published: 2015-11-25T17:07:00.000Z
 ---
 
