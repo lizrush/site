@@ -1,88 +1,20 @@
-import React from 'react'
-import { Star } from './Star'
-import { sparkles, off, fade, refresh } from './constants'
+import React, { useState, useEffect } from 'react'
+import { Animator } from './Animator'
 
-export class Sparkles extends React.Component {
-  steps = new Int16Array(sparkles).fill(off)
-  x = this.props.x
-  y = this.props.y
-  progress = 0
+export function Sparkles(props) {
+  const [x, setX] = useState(props.x)
+  const [y, setY] = useState(props.y)
 
-  shouldComponentUpdate() {
-    return false
-  }
-
-  componentDidMount() {
-    document.addEventListener('mousemove', this.onMouseMove)
-    this.id = requestAnimationFrame(this.animate)
-  }
-
-  componentWillUnmount() {
-    cancelAnimationFrame(this.id)
-    document.removeEventListener('mousemove', this.onMouseMove)
-  }
-
-  onMouseMove = event => {
-    this.setMousePosition(event)
-    this.enableOneStar()
-  }
-
-  render() {
-    return <>{this.stars}</>
-  }
-
-  animate = timestamp => {
-    if (timestamp - this.progress > refresh) {
-      this.progress = timestamp
-      this.step()
-      this.forceUpdate()
+  useEffect(() => {
+    function onMouseMove(event) {
+      setX(event.x + window.pageXOffset)
+      setY(event.y + window.pageYOffset)
     }
 
-    this.id = requestAnimationFrame(this.animate)
-  }
+    document.addEventListener('mousemove', onMouseMove)
 
-  step() {
-    for (let i = 0; i < this.steps.length; i++) {
-      if (this.steps[i] > off) {
-        this.steps[i]--
-      }
-    }
-  }
+    return () => document.removeEventListener('mousemove', onMouseMove)
+  }, [])
 
-  setMousePosition(event) {
-    this.x = event.x + window.pageXOffset
-    this.y = event.y + window.pageYOffset
-  }
-
-  enableOneStar() {
-    const index = this.steps.indexOf(off)
-    if (index >= 0) {
-      this.steps[index] = fade
-    }
-  }
-
-  get stars() {
-    const stars = []
-
-    for (let i = 0; i < this.steps.length; i++) {
-      if (this.steps[i] <= off) {
-        continue
-      }
-
-      stars.push(
-        <Star
-          key={i}
-          step={this.steps[i]}
-          dispose={() => {
-            this.steps[i] = off
-          }}
-          n={i}
-          x={this.x}
-          y={this.y}
-        />
-      )
-    }
-
-    return stars
-  }
+  return <Animator x={x} y={y} />
 }
