@@ -1,15 +1,6 @@
 import React from 'react'
 import { fade, off } from './constants'
-
-const baseStyle = {
-  position: 'absolute',
-  overflow: 'hidden',
-}
-
-const wrapperStyle = {
-  ...baseStyle,
-  zIndex: 999,
-}
+import styles from './styles.module.scss'
 
 export class Star extends React.Component {
   constructor(props) {
@@ -22,7 +13,7 @@ export class Star extends React.Component {
   }
 
   componentDidUpdate() {
-    if (this.props.step <= off) {
+    if (this.isOff) {
       this.reset()
       return
     }
@@ -32,7 +23,7 @@ export class Star extends React.Component {
   }
 
   render() {
-    if (this.props.step <= off) {
+    if (this.isOff) {
       return null
     }
 
@@ -46,37 +37,23 @@ export class Star extends React.Component {
   get star() {
     return (
       <div
+        className={styles.star}
         style={{
-          ...wrapperStyle,
           clip:
             this.props.step > (3 * fade) / 4
               ? 'rect(0, 5px, 5px, 0)'
               : 'rect(1px, 4px, 4px, 1px)',
-          height: '5px',
           left: `${this.left}px`,
           top: `${this.top}px`,
-          width: `5px`,
         }}
       >
         <div
-          style={{
-            ...baseStyle,
-            backgroundColor: this.color,
-            height: '1px',
-            left: '0',
-            top: '2px',
-            width: '5px',
-          }}
+          className={styles.horizontalStarLine}
+          style={this.backgroundColor}
         ></div>
         <div
-          style={{
-            ...baseStyle,
-            backgroundColor: this.color,
-            height: '5px',
-            left: '2px',
-            top: '0',
-            width: '1px',
-          }}
+          className={styles.verticalStarLine}
+          style={this.backgroundColor}
         ></div>
       </div>
     )
@@ -87,9 +64,9 @@ export class Star extends React.Component {
 
     return (
       <div
+        className={styles.tinyStar}
         style={{
-          ...wrapperStyle,
-          backgroundColor: this.color,
+          ...this.backgroundColor,
           height: dim,
           left: `${this.left}px`,
           top: `${this.top}px`,
@@ -131,6 +108,16 @@ export class Star extends React.Component {
       (this.props.step + Math.random() * 3) / (fade + Math.random() * 3)
 
     return float + wave * widen
+  }
+
+  get isOff() {
+    return this.props.step <= off
+  }
+
+  get backgroundColor() {
+    return {
+      backgroundColor: this.color,
+    }
   }
 }
 

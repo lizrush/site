@@ -35,10 +35,9 @@
   }
 
   .sparkles {
-    display: inline;
+    display: inline-block;
     grid-area: sparkles;
     justify-self: end;
-    font-size: 4.5em;
   }
 
   .imageCropper {
