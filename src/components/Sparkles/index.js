@@ -1,20 +1,20 @@
-import React, { useState, useEffect } from 'react'
-import { Animator } from './Animator'
+import React from 'react'
+import MediaQuery from 'react-responsive'
+import { Toggle } from './Toggle'
+import { Falling } from './Falling'
+import { MouseTracking } from './MouseTracking'
+import styles from './styles.module.scss'
 
-export function Sparkles(props) {
-  const [x, setX] = useState(props.x)
-  const [y, setY] = useState(props.y)
+export function Sparkles() {
+  return (
+    <div aria-hidden className={styles.sparkles}>
+      <MediaQuery query="(pointer: fine)">
+        <Toggle>{(x, y) => <MouseTracking x={x} y={y} />}</Toggle>
+      </MediaQuery>
 
-  useEffect(() => {
-    function onMouseMove(event) {
-      setX(event.x + window.pageXOffset)
-      setY(event.y + window.pageYOffset)
-    }
-
-    document.addEventListener('mousemove', onMouseMove)
-
-    return () => document.removeEventListener('mousemove', onMouseMove)
-  }, [])
-
-  return <Animator x={x} y={y} />
+      <MediaQuery query="(pointer: coarse), (pointer: none)">
+        <Falling />
+      </MediaQuery>
+    </div>
+  )
 }

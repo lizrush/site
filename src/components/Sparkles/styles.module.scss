@@ -3,13 +3,18 @@
   overflow: hidden;
 }
 
-%wrapper {
-  @extend %base;
-  z-index: 999;
+.animator {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .star {
-  @extend %wrapper;
+  @extend %base;
   height: 5px;
   width: 5px;
 }
@@ -32,4 +37,36 @@
 
 .tinyStar {
   @extend %base;
+}
+
+.toggleButton {
+  height: 100%;
+  border-color: transparent;
+}
+
+.sparkles {
+  display: inline;
+  grid-area: sparkles;
+  justify-self: end;
+  font-size: 4.5em;
+}
+
+%toggle {
+  border-color: transparent;
+  transition: filter 0.67s ease-in;
+  background-color: transparent;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.toggleOn {
+  @extend %toggle;
+}
+
+.toggleOff {
+  @extend %toggle;
+  filter: grayscale(100%);
+  transition: none;
 }
