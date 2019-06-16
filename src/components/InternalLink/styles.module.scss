@@ -1,0 +1,16 @@
+@import '../../shared/shared';
+
+%link {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.pink {
+  @extend %link;
+  color: rgba(255, 135, 207, 1);
+}
+
+.yellow {
+  @extend %link;
+  color: rgba(248, 237, 67, 1);
+}

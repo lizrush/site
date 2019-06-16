@@ -1,0 +1,35 @@
+.post {
+  .pinkUnderline {
+    @extend %highlight;
+
+    background: linear-gradient(
+        to bottom,
+        transparent 75%,
+        rgba(255, 135, 207, 0.35) 0
+      )
+      left bottom/0% 100% no-repeat;
+  }
+
+  .yellowHighlight {
+    @extend %highlight;
+
+    background: linear-gradient(
+        to bottom,
+        transparent 75%,
+        rgba(248, 237, 67, 0.75) 0
+      )
+      left bottom/0% 100% no-repeat;
+  }
+
+  &:hover {
+    .pinkUnderline,
+    .yellowHighlight {
+      background-size: 100% 100%;
+    }
+  }
+}
+
+%highlight {
+  transition: background-size 0.7s ease;
+  padding-bottom: inherit;
+}

@@ -3,6 +3,9 @@ import { Link, graphql } from 'gatsby'
 
 import { Layout } from '../templates/Layout'
 import { SEO } from '../components/SEO'
+import { InternalLink } from '../components/InternalLink'
+
+import styles from './blog.module.scss'
 
 class Blog extends React.Component {
   render() {
@@ -13,17 +16,26 @@ class Blog extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="All posts" />
-        <Link to="/">⟵ back</Link>
+        <InternalLink to="/" color="pink">
+          ⟵ back
+        </InternalLink>
 
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.frontmatter.path
 
           return (
-            <div key={node.frontmatter.path}>
-              <small>{node.frontmatter.date_published}</small>
+            <div key={node.frontmatter.path} className={styles.post}>
+              <span className={styles.yellowHighlight}>
+                {node.frontmatter.date_published}
+              </span>
 
               <h3>
-                <Link to={node.frontmatter.path}>{title}</Link>
+                <Link
+                  to={node.frontmatter.path}
+                  className={styles.pinkUnderline}
+                >
+                  {title}
+                </Link>
               </h3>
             </div>
           )

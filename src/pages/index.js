@@ -1,7 +1,7 @@
 import React from 'react'
-import { Link } from 'gatsby'
 
 import { ExternalLink } from '../components/ExternalLink'
+import { InternalLink } from '../components/InternalLink'
 import { Headshot } from '../components/Headshot'
 import { Layout } from '../templates/Layout'
 import { SEO } from '../components/SEO'
@@ -52,7 +52,9 @@ export default function IndexPage() {
             </ExternalLink>
           </p>
 
-          <Link to="/blog">blog posts</Link>
+          <InternalLink color="pink" to="/blog">
+            blog posts ⟶
+          </InternalLink>
         </div>
       </div>
     </Layout>
