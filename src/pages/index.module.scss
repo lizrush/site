@@ -16,6 +16,12 @@
   border: 1px solid #d3d3d3b5;
   box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.2);
   justify-self: center;
+
+  @media (pointer: fine) {
+    // when sparkles follow a cursor,
+    // move avi image behind sparkles
+    z-index: -2;
+  }
 }
 
 .content {
