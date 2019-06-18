@@ -5,8 +5,7 @@ import { InternalLink } from '../components/InternalLink'
 import { Headshot } from '../components/Headshot'
 import { Layout } from '../templates/Layout'
 import { SEO } from '../components/SEO'
-import { SparkleToggle } from '../components/SparkleToggle'
-
+import { Sparkles } from '../components/Sparkles'
 import styles from './index.module.scss'
 
 export default function IndexPage() {
@@ -15,9 +14,7 @@ export default function IndexPage() {
       <SEO title="Home" keywords={[`lizmrush`, `liz rush`]} />
 
       <div className={styles.gridContainer}>
-        <div className={styles.sparkles}>
-          <SparkleToggle />
-        </div>
+        <Sparkles />
 
         <div className={styles.imageCropper}>
           <Headshot />

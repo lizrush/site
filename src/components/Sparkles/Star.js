@@ -88,12 +88,18 @@ export class Star extends React.Component {
   }
 
   maybeDispose() {
-    if (
-      this.top >= window.innerHeight + window.pageYOffset ||
-      this.left >= window.innerWidth + window.pageXOffset
-    ) {
+    if (this.isOutOfBounds) {
       this.props.dispose()
     }
+  }
+
+  get isOutOfBounds() {
+    return (
+      this.top > window.innerHeight ||
+      this.left > window.innerWidth ||
+      this.top < 0 ||
+      this.left < 0
+    )
   }
 
   get topAdjustment() {
@@ -111,7 +117,7 @@ export class Star extends React.Component {
   }
 
   get isOff() {
-    return this.props.step <= off
+    return this.props.step <= off || this.isOutOfBounds
   }
 
   get backgroundColor() {

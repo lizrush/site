@@ -23,21 +23,11 @@
   justify-content: stretch;
 }
 
-.sparkles {
-  display: none;
-}
-
 @media (min-width: 500px) {
   .gridContainer {
     grid-template-columns: 0.3fr 1fr;
     grid-template-rows: 0.25fr 1fr;
     grid-template-areas: '. sparkles' 'headshot content';
-  }
-
-  .sparkles {
-    display: inline-block;
-    grid-area: sparkles;
-    justify-self: end;
   }
 
   .imageCropper {

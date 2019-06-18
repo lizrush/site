@@ -2,7 +2,7 @@ import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
-export function SparklesEmoji() {
+export function Emoji() {
   return (
     <StaticQuery
       query={graphql`

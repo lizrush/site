@@ -1,6 +1,7 @@
 import React from 'react'
 import { Star } from './Star'
 import { sparkles, off, fade, refresh } from './constants'
+import styles from './styles.module.scss'
 
 export class Animator extends React.Component {
   steps = new Int16Array(sparkles).fill(off)
@@ -10,6 +11,7 @@ export class Animator extends React.Component {
     if (this.props.x !== nextProps.x || this.props.y !== nextProps.y) {
       this.enableOneStar()
     }
+
     return false
   }
 
@@ -22,7 +24,7 @@ export class Animator extends React.Component {
   }
 
   render() {
-    return <>{this.stars}</>
+    return <div className={styles.animator}>{this.stars}</div>
   }
 
   animate = timestamp => {
