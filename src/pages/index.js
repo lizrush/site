@@ -43,10 +43,22 @@ export default function IndexPage() {
           </p>
 
           <p>
+            I serve on the{' '}
+            <ExternalLink
+              color="pink"
+              href="http://www.adadevelopersacademy.org/"
+            >
+              Ada Developers Academy
+            </ExternalLink>{' '}
+            Board of Advisors.
+          </p>
+
+          <p>
             You can contact me at{' '}
-            <ExternalLink color="pink" href="mailto:liz@lizmrush.com">
+            <ExternalLink color="yellow" href="mailto:liz@lizmrush.com">
               liz@lizmrush.com
             </ExternalLink>
+            .
           </p>
 
           <InternalLink color="pink" to="/blog">
