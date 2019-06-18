@@ -1,8 +1,9 @@
 import React from 'react'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 
 import { Layout } from '../Layout'
 import { SEO } from '../../components/SEO'
+import { InternalLink } from '../../components/InternalLink/index'
 
 export default function Template({ data }) {
   const { markdownRemark } = data
@@ -25,7 +26,9 @@ export default function Template({ data }) {
         </div>
       </div>
 
-      <Link to="/blog">⟵ back</Link>
+      <InternalLink to="/blog" color="pink">
+        ⟵ back
+      </InternalLink>
     </Layout>
   )
 }

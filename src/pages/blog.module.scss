@@ -1,10 +1,13 @@
 .post {
+  h3 {
+    margin-top: 0.15rem;
+  }
   .pinkUnderline {
     @extend %highlight;
 
     background: linear-gradient(
         to bottom,
-        transparent 75%,
+        transparent 60%,
         rgba(255, 135, 207, 0.35) 0
       )
       left bottom/0% 100% no-repeat;
@@ -15,7 +18,7 @@
 
     background: linear-gradient(
         to bottom,
-        transparent 75%,
+        transparent 60%,
         rgba(248, 237, 67, 0.75) 0
       )
       left bottom/0% 100% no-repeat;
@@ -26,6 +29,10 @@
     .yellowHighlight {
       background-size: 100% 100%;
     }
+  }
+
+  &:first-of-type {
+    margin-top: 1em;
   }
 }
 
