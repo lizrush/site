@@ -127,8 +127,4 @@ If you don't see the `cron` daemon running, try running the command `sudo servic
 
 <br>
 
----
-
-Special thanks to [Elizabeth Uselton](https://twitter.com/lizuselton), for once making me think I was getting twitter popular, publicly informing me that, no, I was not, they were all just bots, and then teaching me to make my own. Thanks as well to [Rob Hanlon](https://twitter.com/ohwillie) for teaching me how to troubleshoot my cron jobs & [Hsing-Hui Hsu](http://twitter.com/SoManyHs) for editing this post.
-
 \*By referring to myself as a "lazy programmer", I am being tongue-in-cheek & joking about how programmers will spend copious amounts of time on code to automate simple tasks that could be done quickly by hand.
