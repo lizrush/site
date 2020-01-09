@@ -39,11 +39,6 @@
   @extend %base;
 }
 
-.toggleButton {
-  height: 100%;
-  border-color: transparent;
-}
-
 .sparkles {
   display: inline;
   grid-area: sparkles;
@@ -58,6 +53,10 @@
 
   &:focus {
     outline: none;
+  }
+
+  &:hover {
+    cursor: pointer;
   }
 }
 
